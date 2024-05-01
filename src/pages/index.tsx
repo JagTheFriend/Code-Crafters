@@ -90,7 +90,7 @@ export default function Home() {
       </Head>
       <main>
         {/* Visualizing purposes */}
-        <section className="bg-green-500">
+        <section className="sticky top-0 z-50 bg-green-500">
           <Navbar />
         </section>
         <section className="bg-red-500">
