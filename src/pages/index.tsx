@@ -48,6 +48,18 @@ function VortexPitch() {
   );
 }
 
+function Footer() {
+  return (
+    <footer className="footer footer-center bg-base-300 mt-10 rounded pb-4 pt-4">
+      <div className="grid grid-flow-col gap-4">
+        <a className="link link-hover">About</a>
+        <a className="link link-hover">Contact</a>
+      </div>
+      <p>Copyright © 2024 - All right reserved by JagTheFriend</p>
+    </footer>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -64,16 +76,17 @@ export default function Home() {
         <section className="sticky top-0 z-50 bg-green-500">
           <Navbar />
         </section>
-        <section className="bg-red-500">
+        <section className="_bg-red-500">
           <SpotlightName />
         </section>
-        <section className="bg-blue-500">
+        <section className="_bg-blue-500">
           <StickyScrollReveal />
         </section>
-        <section className="bg-yellow-500">
+        <section className="_bg-yellow-500">
           <VortexPitch />
         </section>
       </main>
+      <Footer />
     </>
   );
 }
