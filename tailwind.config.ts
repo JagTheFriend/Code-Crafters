@@ -1,5 +1,8 @@
 import daisyui from "daisyui";
 import { fontFamily } from "tailwindcss/defaultTheme";
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
 
 export default {
   content: ["./src/**/*.tsx"],
@@ -32,7 +35,7 @@ export default {
       },
     },
   },
-  plugins: [daisyui],
+  plugins: [daisyui, addVariablesForColors],
 
   // daisyUI config (optional - here are the default values)
   daisyui: {
@@ -46,3 +49,14 @@ export default {
     themeRoot: ":root", // The element that receives theme color CSS variables
   },
 };
+
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
