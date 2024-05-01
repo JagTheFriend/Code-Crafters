@@ -9,9 +9,9 @@ function SpotlightName() {
         className="-top-40 left-0 md:-top-20 md:left-60"
         fill="white"
       />
-      <div className=" relative z-10  mx-auto w-full max-w-7xl  p-4 pt-20 md:pt-0">
+      <div className="relative z-10 mx-auto  w-full max-w-7xl p-4  pt-20 hover:cursor-pointer md:pt-0">
         <h1 className="bg-opacity-50 bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text text-center text-4xl font-bold text-transparent md:text-7xl">
-          Code Crafters
+          <span className="transition-all hover:border-b-2">Code Crafters</span>
         </h1>
         <p className="mx-auto mt-4 max-w-lg text-center text-base font-normal text-neutral-300">
           Inspiring Minds, One Post at a Time
@@ -30,8 +30,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Navbar />
-        <SpotlightName />
+        {/* Visualizing purposes */}
+        <section className="bg-green-500">
+          <Navbar />
+        </section>
+        <section className="bg-red-500">
+          <SpotlightName />
+        </section>
       </main>
     </>
   );
