@@ -8,6 +8,13 @@ export default {
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
       },
+      colors: {
+        "ui-text": "#f3eae9",
+        "ui-background": "#1a1a1a",
+        "ui-primary": "#cda1a1",
+        "ui-secondary": "#685a37",
+        "ui-accent": "#aaa45f",
+      },
     },
   },
   plugins: [daisyui],
