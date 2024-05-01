@@ -2,6 +2,7 @@ import Head from "next/head";
 import Navbar from "~/components/Navbar";
 import StickyScrollReveal from "~/components/StickyScrollReveal";
 import { Spotlight } from "~/components/ui/Spotlight";
+import { Vortex } from "~/components/ui/vortex";
 
 function SpotlightName() {
   return (
@@ -22,6 +23,30 @@ function SpotlightName() {
   );
 }
 
+function VortexPitch() {
+  return (
+    <div className="mx-auto h-[30rem] w-[calc(100%)]  overflow-hidden rounded-md">
+      <Vortex
+        backgroundColor=""
+        className="flex h-full w-full flex-col items-center justify-center px-2 py-4 md:px-10"
+      >
+        <h2 className="text-center text-2xl font-bold text-white md:text-6xl">
+          Code Crafters
+        </h2>
+        <p className="mt-6 max-w-xl text-center text-sm text-white md:text-2xl">
+          Crafting digital masterpieces one line at a time.
+        </p>
+        <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row">
+          <button className="rounded-lg bg-blue-600 px-4 py-2 text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset] transition duration-200 hover:bg-blue-700">
+            Register
+          </button>
+          <button className="px-4 py-2  text-white">Login</button>
+        </div>
+      </Vortex>
+    </div>
+  );
+}
+
 export default function Home() {
   return (
     <>
@@ -35,11 +60,14 @@ export default function Home() {
         <section className="sticky top-0 z-50 bg-green-500">
           <Navbar />
         </section>
-        <section className="bg-red-500">
+        <section className="_bg-red-500 h-40">
           <SpotlightName />
         </section>
-        <section className="bg-blue-500">
+        <section className="_bg-blue-500">
           <StickyScrollReveal />
+        </section>
+        <section className="_bg-yellow-500">
+          <VortexPitch />
         </section>
       </main>
     </>
