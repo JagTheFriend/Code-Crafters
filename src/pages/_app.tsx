@@ -10,7 +10,7 @@ const inter = Inter({
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
-    <main className={`font-sans ${inter.variable}`}>
+    <main className={`font-sans ${inter.variable} antialiased`}>
       <Component {...pageProps} />
     </main>
   );
