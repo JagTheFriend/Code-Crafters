@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="footer mt-10 flex items-center justify-center bg-base-300 p-4 text-neutral-content">
+    <footer className="footer mt-auto flex items-center justify-center bg-base-300 p-4 text-neutral-content">
       <aside className="grid-flow-col items-center">
         <p>Copyright © 2024 - All right reserved</p>
       </aside>
