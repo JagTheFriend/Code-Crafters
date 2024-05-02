@@ -39,10 +39,15 @@ function VortexPitch() {
           one line at a time for free.
         </p>
         <div className="mt-6 flex flex-col items-center gap-4 sm:flex-row">
-          <button className="rounded-lg bg-blue-600 px-4 py-2 text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset] transition duration-200 hover:bg-blue-700">
+          <button
+            type="button"
+            className="rounded-lg bg-blue-600 px-4 py-2 text-white shadow-[0px_2px_0px_0px_#FFFFFF40_inset] transition duration-200 hover:bg-blue-700"
+          >
             Register
           </button>
-          <button className="px-4 py-2  text-white">Login</button>
+          <button type="button" className="px-4 py-2  text-white">
+            Login
+          </button>
         </div>
       </Vortex>
     </div>
