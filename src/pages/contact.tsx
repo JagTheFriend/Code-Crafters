@@ -16,7 +16,7 @@ function ContactLamp() {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text py-4 text-center text-4xl font-medium tracking-tight text-transparent"
+        className="bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text py-4 text-center text-xl font-medium tracking-tight text-transparent lg:text-4xl"
       >
         Feel free to contact developer:{" "}
         <Link href="mailto:JagTheFriend12@gmail.com">
