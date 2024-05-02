@@ -13,11 +13,11 @@ function AboutContent() {
         <p className="relative z-10 mx-auto my-2 max-w-lg text-center text-sm text-neutral-500">
           At Code Crafters, we strive to be your go-to source for informative
           and engaging content on a wide range of topics in the tech industry.
-          Whether you're a beginner looking to learn the basics of coding or an
-          experienced developer seeking advanced tips and tricks, we've got you
-          covered. From programming languages like Python, JavaScript, and Java
-          to web development, software engineering, and everything in between,
-          our blog covers it all.
+          Whether you&apos;re a beginner looking to learn the basics of coding
+          or an experienced developer seeking advanced tips and tricks,
+          we&apos;ve got you covered. From programming languages like Python,
+          JavaScript, and Java to web development, software engineering, and
+          everything in between, our blog covers it all.
         </p>
       </div>
       <BackgroundBeams />
