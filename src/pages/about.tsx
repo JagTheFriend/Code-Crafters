@@ -31,7 +31,7 @@ export default function AboutPage() {
       <Head>
         <title>About Code Crafters</title>
         <meta name="description" content="About Code Crafters" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
       <main className="scroll-smooth">
         <section className="sticky top-0 z-50">

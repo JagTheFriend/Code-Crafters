@@ -104,7 +104,7 @@ export default function Home() {
           name="description"
           content="Simple website made using create-t3-app"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
       <main className="scroll-smooth">
         {/* Visualizing purposes */}

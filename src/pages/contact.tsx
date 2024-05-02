@@ -33,7 +33,7 @@ export default function ContactPage() {
       <Head>
         <title>Contact</title>
         <meta name="description" content="Contact author of Code Crafters" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.svg" />
       </Head>
       <main className="scroll-smooth">
         <section className="sticky top-0 z-50">
