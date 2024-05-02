@@ -34,10 +34,10 @@ export default function AboutPage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="scroll-smooth">
-        <section className="_bg-green-500 sticky top-0 z-50">
+        <section className="sticky top-0 z-50">
           <Navbar pageName="about" />
         </section>
-        <section className="bg-red-500">
+        <section>
           <AboutContent />
         </section>
       </main>

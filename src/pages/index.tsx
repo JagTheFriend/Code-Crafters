@@ -67,16 +67,16 @@ export default function Home() {
       </Head>
       <main className="scroll-smooth">
         {/* Visualizing purposes */}
-        <section className="_bg-green-500 sticky top-0 z-50">
+        <section className="sticky top-0 z-50">
           <Navbar pageName="home" />
         </section>
-        <section className="_bg-red-500">
+        <section>
           <SpotlightName />
         </section>
-        <section className="_bg-blue-500">
+        <section>
           <StickyScrollReveal />
         </section>
-        <section className="_bg-yellow-500">
+        <section>
           <VortexPitch />
         </section>
       </main>
