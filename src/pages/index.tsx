@@ -67,8 +67,8 @@ export default function Home() {
       </Head>
       <main className="scroll-smooth">
         {/* Visualizing purposes */}
-        <section className="sticky top-0 z-50 bg-green-500">
-          <Navbar />
+        <section className="_bg-green-500 sticky top-0 z-50">
+          <Navbar pageName="home" />
         </section>
         <section className="_bg-red-500">
           <SpotlightName />
