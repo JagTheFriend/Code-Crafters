@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <div className="navbar bg-base-300">
@@ -11,6 +13,7 @@ export default function Navbar() {
               viewBox="0 0 24 24"
               stroke="currentColor"
             >
+              <title>Sidebar Button</title>
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
@@ -19,32 +22,39 @@ export default function Navbar() {
               />
             </svg>
           </div>
-          <ul
-            tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-          >
+          <ul className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow">
             <li>
-              <a>About</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
-              <a>Contact</a>
+              <Link href="/">About</Link>
+            </li>
+            <li>
+              <Link href="/">Contact</Link>
             </li>
           </ul>
         </div>
-        <a className="btn btn-ghost text-2xl">Code Crafters</a>
+        <button type="button" className="btn btn-ghost text-2xl">
+          Code Crafters
+        </button>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <a>About</a>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <a>Contact</a>
+            <Link href="/">About</Link>
+          </li>
+          <li>
+            <Link href="/">Contact</Link>
           </li>
         </ul>
       </div>
       <div className="navbar-end">
-        <a className="btn">Sign In</a>
+        <button type="button" className="btn">
+          Sign In
+        </button>
       </div>
     </div>
   );
