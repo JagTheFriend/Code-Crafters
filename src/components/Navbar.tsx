@@ -28,13 +28,13 @@ export default function Navbar({
           </div>
           <ul className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow">
             <li>
-              <Link href="/">Home</Link>
+              <Link href="/" className={`${pageName === "home" && "link"}`}>Home</Link>
             </li>
             <li>
-              <Link href="/about">About</Link>
+              <Link href="/about" className={`${pageName === "about" && "link"}`}>About</Link>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <Link href="/contact" className={`${pageName === "contact" && "link"}`}>Contact</Link>
             </li>
           </ul>
         </div>
