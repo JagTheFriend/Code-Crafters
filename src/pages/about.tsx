@@ -7,10 +7,10 @@ function AboutContent() {
   return (
     <div className="relative flex h-screen w-full flex-col items-center justify-center rounded-md bg-neutral-950 antialiased">
       <div className="mx-auto max-w-2xl p-4">
-        <h1 className="relative z-10 bg-gradient-to-b from-neutral-200  to-neutral-600 bg-clip-text text-center font-sans text-lg  font-bold text-transparent md:text-7xl">
+        <h1 className="relative z-10 bg-gradient-to-b from-neutral-200  to-neutral-600 bg-clip-text text-center font-sans text-3xl font-bold text-transparent md:text-7xl">
           Code Crafters
         </h1>
-        <p className="relative z-10 mx-auto my-2 max-w-lg text-center text-sm text-neutral-500">
+        <p className="relative z-10 mx-auto my-2 max-w-lg text-start text-lg text-neutral-500">
           At Code Crafters, we strive to be your go-to source for informative
           and engaging content on a wide range of topics in the tech industry.
           Whether you&apos;re a beginner looking to learn the basics of coding
