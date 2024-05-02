@@ -1,6 +1,10 @@
 import Link from "next/link";
 
-export default function Navbar() {
+export default function Navbar({
+  pageName,
+}: {
+  pageName: "home" | "about" | "contact";
+}) {
   return (
     <div className="navbar bg-base-300">
       <div className="navbar-start">
@@ -41,13 +45,28 @@ export default function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link href="/">Home</Link>
+            <Link
+              href="/"
+              className={`${pageName !== "home" && "link-hover"} link`}
+            >
+              Home
+            </Link>
           </li>
           <li>
-            <Link href="/about">About</Link>
+            <Link
+              href="/about"
+              className={`${pageName !== "about" && "link-hover"} link`}
+            >
+              About
+            </Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link
+              href="/contact"
+              className={`${pageName !== "contact" && "link-hover"} link`}
+            >
+              Contact
+            </Link>
           </li>
         </ul>
       </div>
