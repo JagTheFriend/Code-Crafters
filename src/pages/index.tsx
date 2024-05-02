@@ -92,7 +92,11 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const isMobile = window.matchMedia("(max-width: 600px)").matches;
+    // const isMobile = window.matchMedia("(max-width: 600px)").matches;
+    const isMobile =
+      /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+        navigator.userAgent,
+      );
     setIsMobile(isMobile);
   }, []);
 
